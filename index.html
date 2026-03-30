@@ -1,1 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Threat Intelligence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Health Threat Intelligence</h1>
+      <p class="subtitle">Minimal, decision-oriented surveillance dashboard</p>
+    </header>
 
+    <main class="layout">
+      <section class="top-action" id="top-action"></section>
+
+      <section class="view" id="global-view">
+        <h2>Global View</h2>
+        <p class="section-note">Strategic context and upstream signals.</p>
+        <div class="alert-list" id="global-alerts"></div>
+      </section>
+
+      <section class="view" id="thailand-view">
+        <h2>Thailand View</h2>
+        <p class="section-note">National relevance and recommended escalation path.</p>
+        <div class="alert-list" id="thailand-alerts"></div>
+      </section>
+
+      <section class="view" id="lamphun-view">
+        <h2>Lamphun Action View</h2>
+        <p class="section-note">Only actionable alerts for local operations.</p>
+        <div class="alert-list" id="lamphun-alerts"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
